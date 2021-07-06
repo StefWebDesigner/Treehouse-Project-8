@@ -1,0 +1,123 @@
+
+/* Main */
+
+body {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4)
+}
+
+input.search-bar {
+  margin: 0;
+border: 1px solid #000;
+text-align: center;
+margin: auto;
+
+}
+
+/* Typography */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  }
+
+header h1 {
+  font-size:  50px;
+  margin: auto;
+  text-align: center;
+}
+
+aside p {
+  font-size: 7px;
+  text-align: center;
+}
+
+.name, .address, .email {
+  font-size: 14px;
+  margin-left: 5px;
+  /* margin: auto; */
+  /* text-align: center; */
+}
+
+.email {  
+  /* padding-left: 2px; */
+  padding-right: 2px;
+  /* max-width: 225px; */
+
+}
+
+/* Flex */
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+
+  .card {
+    display: flex;
+    margin: auto;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    border: 1px solid #A6A6A6;
+    border-radius: 10px;
+    width: 225px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    flex-direction: row;
+    padding-right: 55px;
+  }
+  
+  .img-flex {
+    flex-direction: column;
+
+  }
+
+  .text-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+/* Navigation */
+
+/* Image */
+
+/* //NEED TO CENTER IT!!! */
+.avatar {
+    height: 75px;
+    width: 75px;
+    border-radius: 360%;
+    /* justify-content: center;
+    align-items: center; */    
+}
+
+/* Footer */
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+  
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
