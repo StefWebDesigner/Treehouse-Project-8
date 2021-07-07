@@ -14,12 +14,19 @@ body {
   background: rgba(100, 100, 100, 0.4)
 }
 
-input.search-bar {
-  margin: 0;
-border: 1px solid #000;
-text-align: center;
-margin: auto;
+#search {
+display: block;
+margin: 25px auto 5px;
+padding: 10px;
+height: 40px;
+width: 95%;
+border: 1px solid #777;
+background-color: #eee;
+box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.75);
+}
 
+#search::placeholder {
+  font-size: 14px;
 }
 
 /* Typography */
@@ -59,7 +66,8 @@ aside p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  }
+  max-width: 1100px;
+}
 
   .card {
     display: flex;
@@ -120,4 +128,10 @@ aside p {
 
 .hidden {
   display: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
