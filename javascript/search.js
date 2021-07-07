@@ -27,8 +27,8 @@ const handleSearch = event => {
 
             //maybe some like var::after or something
 
-            // box.style.display = "block";
-           if (box.style.display = "block") {
+            // box.style.display = "flex";
+           if (box.style.display = "flex") {
             box.classList.add("display-block");
            }
 
