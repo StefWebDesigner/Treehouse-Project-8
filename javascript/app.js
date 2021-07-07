@@ -10,7 +10,6 @@ const modalClose = document.querySelector(".modal-close");
 let employees = [];
 const form = document.querySelector('#myInput');
 
-
 // fetch data from API
 fetch(urlAPI)
 .then(res => res.json())
@@ -41,14 +40,10 @@ function displayEmployees(employeeData) {
     `
     });
 
-
     gridContainer.innerHTML = employeeHTML;
 }
 
-
 function displayModal(index) {
-    // use object destructuring make our template literal cleaner
-    //****** This is how to look at mulitp results of the api result  */
     let { name, dob, phone, email, location: { city, street, state, postcode
     }, picture } = employees[index];
     let date = new Date(dob.date);
@@ -72,7 +67,6 @@ function displayModal(index) {
     <div class="arrows-right">
     <button class="arrow" id="right-arrow" onclick="nextModal(${index})">></button>
     </div
-    
     `;
 
     overlay.classList.remove("hidden");
@@ -80,7 +74,6 @@ function displayModal(index) {
     };
 
 //Create a visible variable and change these
-//This is wher to hook up the lightbox
 gridContainer.addEventListener('click', e => {
     // make sure the click is not on the gridContainer itself
     if (e.target !== gridContainer) {
@@ -110,7 +103,6 @@ function nextModal(index) {
     let nextIndex = index += 1;
     if (nextIndex < 12) {
         displayModal(nextIndex);
-
     } else {
         displayModal(0);
     }
