@@ -27,19 +27,19 @@ const handleSearch = event => {
 
             //maybe some like var::after or something
 
-            box.style.display = "block";
-        //    if (box.style.display = "block") {
-        //     box.classList.add("display-block");
-        //    }
+            // box.style.display = "block";
+           if (box.style.display = "block") {
+            box.classList.add("display-block");
+           }
 
             //TEST
             console.log('In blocked');
 
         } else {
-            box.style.display = "none";
-            // if (box.style.display = "none") {
-            //     box.classList.remove("display-block");
-            // }
+            // box.style.display = "none";
+            if (box.style.display = "none") {
+                box.classList.remove("display-block");
+            }
 
             //TEST
             console.log('In none');
