@@ -61,7 +61,7 @@ function displayModal(index) {
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     </div>
     
-    <div class="arrgiot ows-left">
+    <div class="arrows-left">
     <button class="arrow" id="left-arrow" onclick="prevModal(${index})"><</button>
     </div>
     <div class="arrows-right">
