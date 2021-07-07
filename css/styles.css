@@ -29,6 +29,24 @@ box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.75);
   font-size: 14px;
 }
 
+
+.arrows-left,
+.arrows-right {
+    position: absolute;
+    cursor: pointer;
+}
+
+.arrows-left {
+    left: 15px;
+    bottom: 15px;
+}
+
+.arrows-right {
+    right: 15px;
+    bottom: 15px;
+}
+
+
 /* Typography */
 
 * {
@@ -91,6 +109,13 @@ aside p {
   .text-container {
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .display-block {
+    /* display: flex;
+    flex-direction: row-reverse; */
+    background-color: #777;
+
   }
 
 /* Navigation */

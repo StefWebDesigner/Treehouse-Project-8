@@ -1,15 +1,9 @@
 
 const search = document.querySelector('#search');
-// const feild_info = document.querySelectorAll('.text-container p');
-// const feild_info = document.querySelectorAll('.card p');
-//IT works but takes everything out
-// const feild_info = document.querySelectorAll('main');
-
 
 //SEARCH EVENT FUNCTION 
 const handleSearch = event => {
     //make it show the .name somewhere
-    // const feild_info = document.querySelectorAll('.text-container p');
     const feild_info = document.querySelectorAll('h2.name');
     const searchTerm = event.target.value.toLowerCase();
 
@@ -23,20 +17,30 @@ const handleSearch = event => {
         console.log('It has enteredd the forEach loop');
 
         const text = feild_var.textContent.toLowerCase();
-        //Need to go up to two parent elements
-        // const box = feild_var.parentElement.parentElement; 
-        const box = feild_var.parentElement.parentElement;        
-       
+        //Maybe I have to adda style.---- stuff to box
+        //options >> style.filter
+        const box = feild_var.parentElement.parentElement;
+            //if one only showns - centered
+            //if many shown -- do your normal thing
 
         if (text.includes(searchTerm)) {
+
+            //maybe some like var::after or something
+
             box.style.display = "block";
+        //    if (box.style.display = "block") {
+        //     box.classList.add("display-block");
+        //    }
 
             //TEST
             console.log('In blocked');
 
         } else {
             box.style.display = "none";
-            
+            // if (box.style.display = "none") {
+            //     box.classList.remove("display-block");
+            // }
+
             //TEST
             console.log('In none');
         }

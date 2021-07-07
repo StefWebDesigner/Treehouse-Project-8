@@ -65,6 +65,14 @@ function displayModal(index) {
         <p>Birthday:
     ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
     </div>
+    
+    <div class="arrgiot ows-left">
+    <button class="arrow" id="left-arrow" onclick="prevModal(${index})"><</button>
+    </div>
+    <div class="arrows-right">
+    <button class="arrow" id="right-arrow" onclick="nextModal(${index})">></button>
+    </div
+    
     `;
 
     overlay.classList.remove("hidden");
@@ -87,3 +95,23 @@ gridContainer.addEventListener('click', e => {
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
 });
+
+function prevModal(index) {
+    let prevIndex = index -= 1;
+    if (prevIndex > -1) {
+        displayModal(prevIndex);
+
+    } else {
+        displayModal(11);
+    }
+}
+
+function nextModal(index) {
+    let nextIndex = index += 1;
+    if (nextIndex < 12) {
+        displayModal(nextIndex);
+
+    } else {
+        displayModal(0);
+    }
+}
