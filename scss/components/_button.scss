@@ -1,0 +1,51 @@
+// ============================================= 
+//                   Button - Styles                  
+// =============================================
+  
+.button-primary, .button-disabled, .alert-btn {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+}
+
+.alert-btn, .button-primary  {
+color: $defult-white; 
+width: 70%;
+background-color: $main-purple;
+margin: auto;
+margin-top: 10px;
+@include main-border-style;
+}
+
+
+button.button-primary {
+margin: auto;
+margin-top: 5px;
+width: 89%;
+margin-bottom: 10px;
+}
+
+
+.button-disabled {
+    margin: auto;
+    margin-top: 5px;
+    width: 89%;
+    margin-bottom: 10px;
+}
+
+.settings-button {
+    margin: auto;
+}
+
+.alert {
+    width: 89%;
+    background-color: $main-purple;
+    margin: auto;
+}
+
+#userField:hover, #messageField:hover {
+    background-color: $main-purple;
+    cursor: pointer;
+    @include hover-border-style;
+}

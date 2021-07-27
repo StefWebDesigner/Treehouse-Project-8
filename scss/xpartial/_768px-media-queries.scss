@@ -1,0 +1,276 @@
+/* ============================================= */
+/*              @Media Breakpoints                      */
+/* ============================================= */
+
+// General Font Styles
+
+.traffic-label, .sm-user-label, .daily-label, .member-label, .message-label, .recent-label, .settings-label {
+    font-size: 22px;
+}
+
+// ============================
+
+@media only screen and (min-width: 768px) {
+
+.grid {
+    width: 768px;    
+    grid-template-columns: 50px 718px;
+    grid-template-rows: minmax(50px) minmax(50px) minmax(300px) minmax(800px) minmax(1700px); //minmax(200px);
+    grid-template-areas:  
+    "header header"
+    "nav main"
+    "nav section"
+    "nav aside"
+    "nav footer";
+}
+
+.divider {
+    width: 768px;
+}
+
+//========================//
+// HEADER (FLEX) PROPERTIES //
+//========================//
+//(TITLE/BELL ICON/ BREAKLINE/ME)
+
+header {
+    width: 768px;    
+}
+
+.header-container {
+    min-width: 718px;
+    justify-content: space-between;
+}
+
+.header-offset {
+    flex-grow: .1;
+}
+
+.bell-icon {
+    height: 70%;
+
+}
+
+// ============================================================
+
+// HOME NAVIGATIONS FLEX
+// (NAV - HOME/BAR/MEMEBERS/SETTINGS)
+
+nav {
+    flex-direction: column;
+    justify-content: start; 
+}
+
+.nav-container {
+    width: 50px;
+    flex-direction: column;
+    height: 100px;
+    gap: 20px;
+}
+
+nav svg {
+    height: 100px;
+    // height: auto;
+}
+
+// ============================================================
+
+// MAIN (FLEX) PROPERTIES
+
+// SEARCH BAR/ALERT PART
+//(MAIN HEADER / ALERT)
+
+.main-container {
+    width: 768px;    
+}
+
+.main-header {
+    justify-content: start;
+}
+
+.alert {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.alert-banner {
+    display: flex;
+}
+
+// ============================================================
+// SECTION (FLEX) PROPERTIES
+//TRAFFIC-HEADER/CHART-1-CONTAINER-FULL/DAILY/SM-USER-LABEL/CHART-3-CONTAINER-FULL)
+
+//***FOUND A BUG IN MOVING THE TRAFFIC NAV TO THE END***
+
+//TRAFFIC NAVIGATION SECTIONS
+
+.traffic-header {
+    display: flex;
+    width: 768px;    
+    flex-direction: row;
+}
+
+.traffic-label {
+    display: flex;
+    justify-content: start;
+}
+
+.traffic-nav {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    
+}
+
+// ul#traffic-nav {
+// // font-size: 5656px;
+// }
+
+// ---------------------------------------------------------------
+
+//CHART 1 SECTIONS
+//(CHARTS1)
+
+.chart-1-main {
+    width: 768px;    
+    justify-content: center;
+}
+
+.chart1 {
+    width: 680px;
+    margin: auto;
+}
+
+// ---------------------------------------------------------------
+
+//CHART 2 SECTIONS
+//(DAILY-LABEL/CHART-2-CONTAINER-FULL)
+
+.chart3 {
+    height: 500px;
+    width: 500px;
+}
+
+.chart3-container {
+    width: 768px;
+    flex-direction: column;
+    margin: left;
+}
+
+// // =========================================
+// ASIDE (FLEX) PROPERTIES
+//SOCIAL FACT SECTIONS
+//(SOCIAL-GROUP/MEMBERS/RECENT-ACTIVITY/MESSAGE/SETTINGS)
+
+.social-flex-parent {
+    width: 768px;    
+    flex-direction: row;
+}
+
+.social-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 28px;
+}
+
+// ---------------------------------------------------------------
+
+// MEMBERS SECTIONS
+// //(PROFILE-IMAGE/MEMEBRS-TEXT/PROFILE-NAME/PROFILE-EMAIL-PROFILE-BIRTH)
+
+.members-container {
+    width: 768px;    
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+//this is to make it into a row
+.members-group {
+    display: flex;
+    width: 768px;    
+    flex-direction: row;
+    gap: 25px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    margin-left: 5px;
+  }
+
+.profile-birth {
+    margin: 0;
+    justify-content: end;
+}
+ 
+a.profile-email, .profile-birth, .profile-name {
+    font-size: 25px;
+    margin: auto;
+}
+
+//============================ Message 
+
+.message-container {
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+}
+
+.form-field, .message-textarea, .button-primary, .button-disabled, .email-container, .profile-container {
+    font-size: 22px;
+}
+
+input#userField {
+    width: 85%;
+    margin: auto;
+    height: 75px;
+}
+
+.message-textarea {
+    height: 149px;
+    text-align: center;
+    width: 85%;
+}
+
+.button-primary, .button-disabled, .alert-btn {
+    width: 85%;
+}
+//====================== Settings
+
+.settings {
+    width: 768px;
+}
+
+.settings-container {
+    width: 768px;
+}
+
+.notifcation-settings {
+    width: 768px;
+}
+
+//CHANGES AND OPERATES THE TIME OPTIONS
+.switch-toggle {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.timezone-settings {
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+}
+
+select#timezone, option {
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+}

@@ -1,0 +1,39 @@
+// ============================================= 
+//                  Base style                      
+// =============================================
+
+* {
+        box-sizing: border-box;
+}
+
+body, main, nav, header {
+        background-color: #eee;
+}
+
+.divider {
+border-bottom: #d9d9d9 solid 1px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.alert {
+width: 320px;
+}
+
+.alert-banner {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+.alert-banner-close {
+       cursor: pointer;
+}
+
+.active {
+        background-color: green;
+        border-radius: 5px;
+        color: white;
+        padding: 5px;
+}
